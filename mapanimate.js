@@ -32,7 +32,7 @@ function setup(){
     var cnv = document.getElementById("can");
     cnv.appendChild(document.getElementById("defaultCanvas0"))
 
-    img = loadImage("http://makerspace.engineering.nyu.edu/wp-content/uploads/2019/05/map.png"); 
+    img = loadImage("map.png"); 
     console.log("hi");
 }
 
