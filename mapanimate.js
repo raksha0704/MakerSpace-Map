@@ -8,23 +8,24 @@ function setup(){
     points = [
         [55, 385, 60, "mojo"],
         [65.5, 309, 60, "sewing"],
-        [181, 216, 60, "ultimakers"],
-        [133,386, 80, "dl"],
+        [123, 386, 80, "dl"],
         [207, 421, 60, "vr"],
         [62, 180, 60, "vinyl"],
         [300, 238, 60, "waterjet"],
         [280, 113, 60, "objet"],
         [307, 44, 60, "objet"],
-        [436, 57, 60, "epilog"],
-        [460, 202, 60, "fusion"],
-        [542, 79, 60, "universal"],
+        [446, 57, 60, "epilog"],
+        [465, 202, 60, "fusion"],
+        [552, 85, 60, "universal"],
         [585, 35, 60, "othermill"],
-        [479, 107, 60, "formlabs"],
-        [398, 108, 60, "shop1"],
-        [688, 219, 60, "shop2"],
-        [626, 247, 60, "tormach"],
-        [350, 164, 60 ,"fortis"],
-        [436, 291, 60, "cairn"]
+        [489, 107, 60, "formlabs"],
+        [403, 108, 60, "shop1"],
+        [700, 219, 60, "shop2"],
+        [646, 247, 60, "tormach"],
+        [350, 164, 60 ,"fortus"],
+        [436, 281, 60, "cairn"],
+        [730, 28, 60, "soldering"],
+        [212, 30, 60, "ultimakers"]
 
     ];
 
@@ -41,7 +42,7 @@ function setup(){
 function draw(){
 
     background(255);
-    image(img, 0, 0, 800, 520);
+    image(img, 0, -10, 800, 520);
     checkHover();
 }
 
@@ -120,7 +121,7 @@ function changeInfo(item){
     }
 
     else if(item == "vr"){
-        $('#img').attr('src',img_url+'1f_llPg-a33FtvT6EN9vdgKHCXiPdfeSv');
+        $('#img').attr('src',img_url+'1xP8CNY8FKL2s0CDyMZGgIoS9MDrCnpVH');
         $("#item_name").html("VR Area");
         $("#description").html("<br>The MakerSpace has an HTC vive headset that students can use for their project work.");
         $("#read_more").attr('href','https://www.vive.com/us/')
@@ -134,7 +135,7 @@ function changeInfo(item){
     }
 
     else if(item == "waterjet"){
-        $('#img').attr('src',img_url+'1f_llPg-a33FtvT6EN9vdgKHCXiPdfeSv');
+        $('#img').attr('src',img_url+'16nY3w-ofTOpbWXfv00tmPs-KyqJSEU9b');
         $("#item_name").html("Water Jet");
         $("#description").html("<br>The WARDJet E-0606 is a CNC waterjet cutter capable of cutting precise lines in materials up to several inches in thickness. The waterjet is operated by MakerSpace staff, so training is not required.");
         $("#read_more").attr('href','http://makerspace.engineering.nyu.edu/machines/waterjet-cutter/')
@@ -169,13 +170,14 @@ function changeInfo(item){
     }
 
     else if(item == "universal"){
+        $('#img').attr('src',img_url+'1jmOLilCtOGwjjZFmVejnF6bULnbaLnyi');
         $("#item_name").html("The Universal Laser");
         $("#description").html("<br>The Universal ILS12.75 is our large format laser cutter. The laser works through a print driver, so files can be designed in many different softwares.");
         $("#read_more").attr('href','http://makerspace.engineering.nyu.edu/machines/universal-laser/')
     }
 
     else if(item == "othermill"){
-        $('#img').attr('src',img_url+'1f_llPg-a33FtvT6EN9vdgKHCXiPdfeSv');
+        $('#img').attr('src',img_url+'1SDTnXmgKo-6yH_vswJogbbkrmeedDYuy');
         $("#item_name").html("The Othermill");
         $("#description").html("<br>The Othermill is our desktop CNC mill, used to prototype PCBs and cut 2D or 3D shapes out of various materials.");
         $("#read_more").attr('href','http://makerspace.engineering.nyu.edu/machines/othermill/')
@@ -209,9 +211,9 @@ function changeInfo(item){
         $("#read_more").attr('href','http://makerspace.engineering.nyu.edu/machines/tormach-pcnc440/')
     }
 
-    else if(item == "fortis"){
+    else if(item == "fortus"){
         $('#img').attr('src',img_url+'1nzmOR0lrEc_TMns3wLSgfne4u91K6bJj');
-        $("#item_name").html("The Tormach");
+        $("#item_name").html("The Fortus");
         $("#description").html("<br>The Mojos, Elites, and Fortus are our commercial-grade 3D printers. Each uses a dual print head to print durable model material and soluble support material, and single-use build trays for reliable prints.");
         $("#read_more").attr('href','http://makerspace.engineering.nyu.edu/machines/stratasys-printers/')
     }
@@ -221,6 +223,12 @@ function changeInfo(item){
         $("#item_name").html("Cairn");
         $("#description").html("<br>A board game like table, on which visitors create their own Cairn based on what they are doing at the MakerSpace and how much time they spend in the space.");
         $("#read_more").attr('href','https://medium.com/@kush.srishti/cairn-developing-a-tangible-data-visualization-tool-1ca118f0db84')
+    }
+    else if(item == "soldering"){
+        $('#img').attr('src',img_url+'1EfGL1pEL80HWP6czT7wakSL-mw4oqgkl');
+        $("#item_name").html("Soldering Bench");
+        $("#description").html("<br>Soldering is heating two metal parts and melting solder (which is made of Tin or Tin-lead alloy)in the junction to connect the two metals.");
+        $("#read_more").attr('href','http://makerspace.engineering.nyu.edu/machines/soldering/')
     }
 }
 
